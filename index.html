@@ -1,22 +1,25 @@
 <head>
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <title>Languaje selector</title>
+    <title>Multitube</title>
 </head>
 <header>
-    <img src="icon.png" id="iconito"> <h1 id="multitube">Multitube</h1>  <nav id="tumama"> <li>Inicio</li>  <li> Descargar</li><li>Funciones</li></nav>
+    <img src="icon.png" id="iconito"> <h1 id="multitube">Multitube</h1>  <nav id="tumama"> <li onclick="inicio()">Inicio</li>  <li onclick="descargar()"> Descargar</li><li onclick="funciones()">Funciones</li></nav>
     
 </header>
  
 <body>
 
   
-   
+   <div id="contenido">
+        <img id="imgcontentsquare2" src="No-Ads-630x350.gif"><h1 id="titlecontent">Sin publicidad</h1><p id="paracontent">Esta aplicacion fue diseñada como proposito de aprendizaje por lo que es sin fin lucro por lo cual no debera preocuparse por la molesta publicidad </p>
+    
+    </div>
     <div id="contenido">
-        <img id="imgcontent" src="grafico-comparativo.png"><h1 id="titlecontent">Ligera</h1><p id="paracontent">Esta aplicacion fue hecha nativa por lo tanto no debe preocuparse por un alto impacto de los recursos de el sistema </p>
+        <img id="imgcontentsquare2" src="AAEAAQAAAAAAAAeAAAAAJDlkOTEwYWI1LTkxYjEtNGFlMi05YmExLTViNzkwZWJlMzU2OQ.png"><h1 id="titlecontent">Ligera</h1><p id="paracontent">Esta aplicacion fue hecha nativa por lo tanto no debe preocuparse por un alto impacto de los recursos de el sistema </p>
     
     </div>
      <div id="contenido">
-        <img id="imgcontent" src="26906053_1619474068135828_1582787606_o.png"><h1 id="titlecontent">Tenga el control</h1><p id="paracontent">Usted tambien podra controlar cada media que se este reproduciendo en un dispositivo desde otro</p>
+        <img id="imgcontentsquare" src="26854418_1619476561468912_440022675_o.png"><h1 id="titlecontent">Tenga el control</h1><p id="paracontent">Usted tambien podra controlar cada media que se este reproduciendo en un dispositivo desde otro</p>
     
     </div>
    <div id="contenido">
@@ -24,19 +27,19 @@
     
     </div>
      <div id="contenido">
-        <img id="imgcontent" src="WhatsApp%20Image%202018-01-13%20at%202.47.28%20AM%20(1).jpeg"><h1 id="titlecontent">Personalize</h1><p id="paracontent">usted podra personalizar cada una de las partes de la aplicacion para asi poder sentirse mas comodo con esta</p>
+        <img id="imgcontent" class="imagencustom" ><h1 id="titlecontent">Personalice</h1><p id="paracontent">usted podra personalizar cada una de las partes de la aplicacion para asi poder sentirse mas comodo con esta</p>
     
     </div>
      <div id="contenido">
-        <img id="imgcontent" src="escaneando%20qr.png"><h1 id="titlecontent">Comparta su media descargada</h1><p id="paracontent">Usted tambien pora compartir su media de un dispositivo a otro con total facilidad, con escanear un codigo es mas que suficiente para empezar transferirse media </p>
+        <img id="imgcontent"  class="imagenscan"><h1 id="titlecontent">Comparta su media descargada</h1><p id="paracontent">Usted tambien pora compartir su media de un dispositivo a otro con total facilidad, con escanear un codigo es mas que suficiente para empezar transferirse media </p>
     
     </div>
-      
+   
      <div id="contenido">
-        <img id="imgcontent4" src="icon.png"><h1 id="titlecontent">Multiplataforma</h1><p id="paracontent">La aplicacion por ahora esta disponible para windows y para android por lo cual podra tenerla tanto en dispositivos de bolsillo,mobiles,o de escritorio que tengan estos sistemas operativos </p>
+        <img id="imgcontentsquare" src=" 26906053_1619474068135828_1582787606_o.png"><h1 id="titlecontent">Multiplataforma</h1><p id="paracontent">La aplicacion por ahora esta disponible para windows y para android por lo cual podra tenerla tanto en dispositivos de bolsillo,mobiles,o de escritorio que tengan estos sistemas operativos </p>
     
     </div>
-<video controls src="https://www.dropbox.com/s/kk5h89w9he0kzyu/20180115152212.mp4?dl=0"></video>
+
     
     
     
@@ -48,14 +51,53 @@
 
 </footer>
 <style>
+     .imagenscan:hover{
+          animation-name: imagencambio2;
+        animation-iteration-count: infinite;
+       animation-duration: 5s;
+    }
+    .imagenscan{
+         background-image:url("escaneando qr.png");
+      
+        background-size: cover;
+    }
+    .imagencustom{
+        background-image:url("WhatsApp%20Image%202018-01-13%20at%202.47.28%20AM%20(1).jpeg");
+      
+        background-size: cover;
+    }
+    .imagencustom:hover{
+          animation-name: imagencambio;
+        animation-iteration-count: infinite;
+       animation-duration: 4s;
+    }
     #imgcontent{
+        margin-left: 5px;
+        margin-top: 5px;
+            position: absolute;
+        left: 10px;
+        bottom: 50px;
+        width: 25%;
+        height: 70%;
+    }
+     #imgcontentsquare{
+        margin-left: 5px;
+        margin-top: 5px;
+            position: absolute;
+         left: 10px;
+       
+        bottom: 60%;
+        width: 40%;
+        height: 40%;
+    }
+    #imgcontentsquare2{
         margin-left: 5px;
         margin-top: 5px;
             position: absolute;
         left: 20px;
         bottom: 60%;
-        width: 30%;
-        height: 45%;
+        width: 35%;
+        height: 35%;
     }
     #titlecontent{
         display: inline-flex;
@@ -74,28 +116,35 @@
              user-select: none;
         font-family: 'Roboto', sans-serif;
     }
-
-     #contenido:hover{
-        height: 65%;
-        width: 50%;
+    #background{
         
+       
+        z-index: -1;
+         position:fixed;
+            background-image: url("tablet-313002_960_720.jpg");
+        background-clip:inherit;
+        
+       
+        
+filter: blur(5px);
     }
+    
     #contenido{
         animation-name: entrada;
        animation-duration: 1s;
         height: 60%;
-        width: 45%;
-        position:relative;
+        width: 60%;
+       
         border-radius: 15px;
         margin-top: 70px;
-        left: 25%;
-        right: 25%;
-    
+         position:relative;
+         margin-left: 15%;
            
     }
     #iconito{
-      
-        margin-bottom: 5px;
+      height: 40px;
+        width: 40px;
+        margin-bottom: 15px;
               margin-left: 35px;
     }
     html{
@@ -116,7 +165,12 @@
              margin-right: 40px;
          user-select: none;
     }
-   
+    #titulo{
+      margin-top: 10%  ;
+        text-align: center;
+        font-family: Roboto;
+       
+    }
     #tumama{
         display: inline-flex;
       margin-bottom: 60px;
@@ -164,8 +218,24 @@
      color:black;
      font font-family:serif;
     }
-    
-    
+     @keyframes imagencambio2 {
+ 
+        30%{background-image: url("escaneando qr.png");}
+        60%{background-image: url("WhatsApp Image 2018-01-13 at 2.52.32 AM (1).jpeg");}
+        90%{background-image: url("WhatsApp Image 2018-01-13 at 2.52.32 AM (2).jpeg");}
+       
+        
+        
+    }
+    @keyframes imagencambio {
+ 
+        25%{background-image: url("WhatsApp Image 2018-01-13 at 2.47.28 AM (1).jpeg");}
+        50%{background-image: url("WhatsApp Image 2018-01-13 at 2.47.28 AM (2).jpeg");}
+        75%{background-image: url("WhatsApp Image 2018-01-13 at 2.47.28 AM (3).jpeg");}
+        100%{background-image: url("WhatsApp Image 2018-01-13 at 2.47.28 AM.jpeg");}
+        
+        
+    }
     @keyframes entrada {
  
     10%   { left:-900px; top:0px;}
@@ -199,7 +269,25 @@
 
 
 <script>
+    function funciones(){
+         window.open("funciones.html","_self")
+    }
+    
 
+function inicio(){
+    window.open("index.html","_self")
+}
+function descargar(){
+    window.open("descargar.html","_self")
+}
+function espanol(){
+    var perro=document.getElementById("titulo");
+    perro.innerHTML="Seleccione el lenguaje para continuar";
+}
+function ingles(){
+    var perro=document.getElementById("titulo");
+    perro.innerHTML="Select the languaje to continue";
+}
 function espanol(){
     var perro=document.getElementById("titulo");
     perro.innerHTML="Seleccione el lenguaje para continuar";
