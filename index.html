@@ -1,132 +1,159 @@
+<html>
 <head>
-<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <title>Languaje selector</title>
+    <title>Multitube</title>
+    <link rel="icon" type="image/png" href="Icona.png">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
 </head>
-<header>
-    <img src="icon.png" id="iconito"> <h1 id="multitube">Multitube</h1>  <nav id="tumama"> <li>Inicio</li>  <li> Descargar</li><li>Funciones</li></nav>
-    
+  
+    <header >
+    <div class="row">
+             <img src="icon.png" id="iconito"> <h1 id="multitube">Multitube</h1>  
+        </div>
+          <div class="row container" >
+              <nav id="tumama"> <li onclick="inicio()">Inicio</li>  <li onclick="descargar()"> Descargar</li><li onclick="funciones()">Funciones</li></nav>
+        </div>
 </header>
- 
-<body>
-
+    
+    <body >
+        <div class="container">
+         <div class="row" id="primerarow">
+            <div class="col-sm-4  ">
+            <img class="img-fluid" src="No-Ads-630x350.gif">
+            </div>
+             <div class="col-sm-8 ">
+                 <h1>Sin publicidad</h1>
+         <p> Esta aplicacion fue diseñada como proposito de aprendizaje por lo que es sin fin lucro por lo cual no debera preocuparse por la molesta publicidad .</p>
+                  </div>
+        </div>
+         <div class="row">
+            <div class="col-sm-4  ">
+            <img class="img-fluid" src="AAEAAQAAAAAAAAeAAAAAJDlkOTEwYWI1LTkxYjEtNGFlMi05YmExLTViNzkwZWJlMzU2OQ.png">
+            </div>
+             <div class="col-sm-8 ">
+                    <h1>Ligera</h1>
+         <p >Esta aplicacion fue hecha nativa por lo tanto no debe preocuparse por un alto impacto de los recursos de el sistema.</p>
+                  </div>
+        </div>
+         <div class="row">
+            <div class="col-sm-4  ">
+            <img class="img-fluid" src="26854418_1619476561468912_440022675_o.png">
+            </div>
+             <div class="col-sm-8 ">
+                    <h1>Tenga el control</h1>
+         <p >Usted tambien podra controlar cada media que se este reproduciendo en un dispositivo desde otro.</p>
+                  </div>
+        </div>
+         <div class="row">
+            <div class="col-sm-4  ">
+            <img class="img-fluid" src="show%20descarga.png">
+            </div>
+             <div class="col-sm-8 ">
+                    <h1 class="textolarge">Descargue con facilidad</h1>
+         <p >Solamente con buscar un elemento usted tendra acceso a la descarga del mismo.</p>
+                  </div>
+        </div>
+         <div class="row">
+            <div class="col-sm-4  ">
+            <img class="img-fluid" src="material_colors_social_image.png">
+            </div>
+             <div class="col-sm-8 ">
+                    <h1>Personalice</h1>
+         <p >usted podra cambiar el color de  cada una de las partes de la aplicacion para asi poder sentirse mas comodo con esta.</p>
+                  </div>
+        </div>
+         <div class="row">
+            <div class="col-sm-4  ">
+            <img class="img-fluid" src="escaneando qr.png">
+            </div>
+             <div class="col-sm-8 ">
+                    <h1 class="textolarge">Comparta su media descargada</h1>
+         <p >Usted tambien pora compartir su media de un dispositivo a otro con total facilidad, con escanear un codigo es mas que suficiente para empezar transferirse media.</p>
+                  </div>
+        </div>
+         <div class="row">
+            <div class="col-sm-4  ">
+            <img class="img-fluid" src="26906053_1619474068135828_1582787606_o.png">
+            </div>
+             <div class="col-sm-8 ">
+                    <h1>Multiplataforma     </h1>
+         <p >La aplicacion por ahora esta disponible para windows y para android por lo cual podra tenerla tanto en dispositivos de bolsillo,mobiles,o de escritorio que tengan estos sistemas operativos .</p>
+                  </div>
+        </div>
   
-   
-    <div id="contenido">
-        <img id="imgcontent" src="grafico-comparativo.png"><h1 id="titlecontent">Ligera</h1><p id="paracontent">Esta aplicacion fue hecha nativa por lo tanto no debe preocuparse por un alto impacto de los recursos de el sistema </p>
+        
+        
+        
+        </div>
+    </body>
     
-    </div>
-     <div id="contenido">
-        <img id="imgcontent" src="26906053_1619474068135828_1582787606_o.png"><h1 id="titlecontent">Tenga el control</h1><p id="paracontent">Usted tambien podra controlar cada media que se este reproduciendo en un dispositivo desde otro</p>
-    
-    </div>
-   <div id="contenido">
-        <img id="imgcontent" src="show%20descarga.png"><h1 id="titlecontent">Descargue con facilidad</h1><p id="paracontent">Solamente con buscar un elemento usted tendra acceso a la descarga del mismo</p>
-    
-    </div>
-     <div id="contenido">
-        <img id="imgcontent" src="WhatsApp%20Image%202018-01-13%20at%202.47.28%20AM%20(1).jpeg"><h1 id="titlecontent">Personalize</h1><p id="paracontent">usted podra personalizar cada una de las partes de la aplicacion para asi poder sentirse mas comodo con esta</p>
-    
-    </div>
-     <div id="contenido">
-        <img id="imgcontent" src="escaneando%20qr.png"><h1 id="titlecontent">Comparta su media descargada</h1><p id="paracontent">Usted tambien pora compartir su media de un dispositivo a otro con total facilidad, con escanear un codigo es mas que suficiente para empezar transferirse media </p>
-    
-    </div>
-      
-     <div id="contenido">
-        <img id="imgcontent4" src="icon.png"><h1 id="titlecontent">Multiplataforma</h1><p id="paracontent">La aplicacion por ahora esta disponible para windows y para android por lo cual podra tenerla tanto en dispositivos de bolsillo,mobiles,o de escritorio que tengan estos sistemas operativos </p>
-    
-    </div>
-<video controls src="https://www.dropbox.com/s/kk5h89w9he0kzyu/20180115152212.mp4?dl=0"></video>
-    
-    
-    
-  
-  
-
-</body>
-<footer>
-
-</footer>
+</html>
 <style>
-    #imgcontent{
-        margin-left: 5px;
-        margin-top: 5px;
-            position: absolute;
-        left: 20px;
-        bottom: 60%;
-        width: 30%;
-        height: 45%;
-    }
-    #titlecontent{
-        display: inline-flex;
-        color:black;
-        font-size: 25px;
-         user-select: none;
-        margin-left: 40%;
-        font-family: 'Roboto', sans-serif;
-    }
-   
-    #paracontent{
-       
-        font-size: 17px;
-         margin-left: 40%;
-        color:black;
-             user-select: none;
-        font-family: 'Roboto', sans-serif;
-    }
-
-     #contenido:hover{
-        height: 65%;
-        width: 50%;
-        
-    }
-    #contenido{
-        animation-name: entrada;
-       animation-duration: 1s;
-        height: 60%;
-        width: 45%;
-        position:relative;
-        border-radius: 15px;
-        margin-top: 70px;
-        left: 25%;
-        right: 25%;
     
-           
-    }
-    #iconito{
+  @media only screen 
+and (max-width : 500px) {
+   #tumama{
+     
       
-        margin-bottom: 5px;
-              margin-left: 35px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+ 
+    margin-left: -150px;
+    }  
+    #iconito{
+        opacity: 0;
     }
-    html{
-         animation-name: slidein;
-       animation-duration: 3s;
-        
+    #multitube{
+          opacity: 0;
+    }
+     
+              
     }
     
-    #multitube{
+    h1{
+        
+        margin-top: 10%;
+    }
+    .textolarge{
+         
+         margin-top: 25%;
+    }
+ 
+    .row{
+        margin-left: 4%;
+        margin-bottom: 7%;
+    }
+    #tumama{
+     display: inline-flex;
+      margin-bottom: 60px;
+        top: 25px;
+            
+      right: 12px;
+        position: absolute;
+         vertical-align:middle;
+        
+    }
+     #multitube{
        
         padding-left: 3px;
         font-family: Roboto;
          display:inline-flex;
       text-align: center;
        color: white;
+         margin-top: 10px;
        vertical-align:middle;
         margin-bottom: 80px;
              margin-right: 40px;
          user-select: none;
     }
-   
-    #tumama{
-        display: inline-flex;
-      margin-bottom: 60px;
-        top: 35px;
-            
-      right: 90px;
-        position: absolute;
-         vertical-align:middle;
-            
-        
+     #iconito{
+      height: 40px;
+        width: 40px;
+    margin-bottom: 70px;
+         margin-left: 10px;
+         margin-top: 10px;
     }
     li:hover{
         color:wheat;
@@ -140,7 +167,27 @@
           font-family: 'Roboto', sans-serif;
     }
  
-    header{
+    #primerarow{
+        margin-top: 90px;
+    }
+      @keyframes entrada {
+ 
+   from {
+   
+   opacity:0;
+           
+  }
+
+  to {
+ opacity:100;
+   
+  }
+           }
+    html{
+   animation-name: entrada;
+        animation-duration: 2s;
+    }
+     header{
          position:fixed;
         background-color: #B71C1C;
         width: 100%;
@@ -153,53 +200,29 @@
         
         
     }
-    body{
-   
-       height: 100%;
-        width: 100%;
-        z-index: 9999;
-        
-    }
-    h1{
-     color:black;
-     font font-family:serif;
-    }
-    
-    
-    @keyframes entrada {
- 
-    10%   { left:-900px; top:0px;}
-    20%  { left:-800px; top:0px;}
-    30%  { left:-700px; top:0px;}
-    40%  { left:-600px; top:0px;}
-    50% { left:-500px; top:0px;}
-    60%   { left:-400px; top:0px;}
-    70%  { left:-300px; top:0px;}
-    80%  { left:-200px; top:0px;}
-    90%  { left:-100px; top:0px;}
-    100% { left:0px; top:0px;}
-        
-        
-    }
-    @keyframes slidein {
-  from {
-   
-   opacity:0;
-           
-  }
-
-  to {
- opacity:100;
-   
-  }
-}
-    
 </style>
-
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
 <script>
+    function funciones(){
+         window.open("funciones.html","_self")
+    }
+    
 
+function inicio(){
+    window.open("index.html","_self")
+}
+function descargar(){
+    window.open("descargar.html","_self")
+}
+function espanol(){
+    var perro=document.getElementById("titulo");
+    perro.innerHTML="Seleccione el lenguaje para continuar";
+}
+function ingles(){
+    var perro=document.getElementById("titulo");
+    perro.innerHTML="Select the languaje to continue";
+}
 function espanol(){
     var perro=document.getElementById("titulo");
     perro.innerHTML="Seleccione el lenguaje para continuar";
@@ -215,3 +238,6 @@ function ingles(){
 
 
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
