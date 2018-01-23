@@ -1,185 +1,131 @@
+<html>
 <head>
-<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <title>Multitube</title>
+       <link rel="icon" type="image/png" href="Icona.png">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
 </head>
-<header>
-   <img src="icon.png" id="iconito"> <h1 id="multitube">Multitube</h1>  <nav id="tumama"> <li onclick="inicio()">Inicio</li>  <li onclick="descargar()"> Descargar</li><li onclick="funciones()">Funciones</li></nav>
-    
-</header>
- 
-<body>
-
   
-   
-    <div id="contenido">
-        <img id="imgcontent" src="Android_robot.png"><h1 id="titlecontent">App para Android</h1><p id="paracontent">Usted puede adquirir esta desde el siguiente servidor  solo debera descargar la app e instalar el respectivo apk en su dispositivo o emulador</p>
-       <img id="aptoide" src="ay2upx0IxEqxBUY0b5s6jA-icon.png">
+    <header  >
+        <div class="row">
+             <img src="icon.png" id="iconito"> <h1 id="multitube">Multitube</h1>  
         </div>
-    <div id="contenido">
-        <img id="imgcontent" src="10-2-microsoft-windows-picture.png"><h1 id="titlecontent">App para Windows</h1><p id="paracontent">Usted puede adquirir esta desde el siguiente servidor  solo debera extraer el archivo luego darle click al fichero llamado SetupMultitube este requiere .Net Framework 4.5 para funcionar</p>
-        <img id="mega2" src="unnamed (1).png">
-         </div>
+          <div class="row container" >
+              <nav id="tumama"> <li onclick="inicio()">Inicio</li>  <li onclick="descargar()"> Descargar</li><li onclick="funciones()">Funciones</li></nav>
+        </div>
    
-    
-    
-    
-  
-  
-
-</body>
-<footer>
-
-</footer>
-<style>
-    #aptoide{
-      position: absolute;
-        height: 80px;
-        width:80px;
-        right: 30%;
-    }
-    #mega{
-        position: absolute;
-        height: 80px;
-        width:80px;
-        right: 35%;
-        margin-right: 50px;
-    }
-     #mega2{
-        position: absolute;
-        height: 80px;
-        width:80px;
-        right: 30%;
-    }
-     .imagenscan:hover{
-          animation-name: imagencambio2;
-        animation-iteration-count: infinite;
-       animation-duration: 5s;
-    }
-    .imagenscan{
-         background-image:url("escaneando qr.png");
-      
-        background-size: cover;
-    }
-    .imagencustom{
-        background-image:url("WhatsApp%20Image%202018-01-13%20at%202.47.28%20AM%20(1).jpeg");
-      
-        background-size: cover;
-    }
-    .imagencustom:hover{
-          animation-name: imagencambio;
-        animation-iteration-count: infinite;
-       animation-duration: 4s;
-    }
-    #imgcontent{
-        margin-left: 5px;
-        margin-top: 5px;
-            position: absolute;
-        left: 10px;
-        bottom: 50px;
-        width: 25%;
-        height: 70%;
-    }
-     #imgcontentsquare{
-        margin-left: 5px;
-        margin-top: 5px;
-            position: absolute;
-         left: 10px;
-       
-        bottom: 60%;
-        width: 40%;
-        height: 40%;
-    }
-    #imgcontentsquare2{
-        margin-left: 5px;
-        margin-top: 5px;
-            position: absolute;
-        left: 20px;
-        bottom: 60%;
-        width: 25%;
-        height: 35%;
-    }
-    #titlecontent{
-        display: inline-flex;
-        color:black;
-        font-size: 25px;
-         user-select: none;
-        margin-left: 40%;
-        font-family: 'Roboto', sans-serif;
-    }
-   
-    #paracontent{
-       
-        font-size: 17px;
-         margin-left: 40%;
-        color:black;
-             user-select: none;
-        font-family: 'Roboto', sans-serif;
-    }
-    #background{
-        
-       
-        z-index: -1;
-         position:fixed;
-            background-image: url("tablet-313002_960_720.jpg");
-        background-clip:inherit;
-        
-       
-        
-filter: blur(5px);
-    }
-    
-    #contenido{
-        animation-name: entrada;
-       animation-duration: 1s;
-        height: 60%;
-        width: 60%;
-        position:relative;
-        border-radius: 15px;
-        margin-top: 70px;
-        margin-left: 17%
     
            
-    }
-    #iconito{
-      height: 40px;
-        width: 40px;
-        margin-bottom: 15px;
-              margin-left: 35px;
-    }
-    html{
-         animation-name: slidein;
-       animation-duration: 3s;
+           
+       
+</header>
+    
+    <body >
+       <div class="container">
+         <div class="row" id="primerarow">
+            <div class="col-sm-4  ">
+            <img class="img-fluid" src="Android_robot.png">
+            </div>
+             <div class="col-sm-8 ">
+               
+                 <h1>App para Android</h1>
+         <p> Usted puede adquirir esta desde el siguiente servidor  solo debera descargar la app e instalar el respectivo apk en su dispositivo o emulador.</p>
+                 <div class="container">
+                  <img class="img-fluid" id="imagendescarga" src="ay2upx0IxEqxBUY0b5s6jA-icon.png" onclick="abrirlink('https://multitube-the-all-in-one-youtube-application.es.aptoide.com/?store_name=gr3apps')">
+                 </div>
+                  </div>
+        </div>
+         <div class="row">
+            <div class="col-sm-4  ">
+            <img class="img-fluid" src="10-2-microsoft-windows-picture.png">
+            </div>
+             <div class="col-sm-8 ">
+                    <h1>App para Windows</h1>
+         <p >Usted puede adquirir esta desde el siguiente servidor  solo debera extraer el archivo luego darle click al fichero llamado SetupMultitube este requiere .Net Framework 4.5 para funcionar.</p>
+                   <div class="container">
+                  <img class="img-fluid" id="imagendescarga" src="unnamed (1).png" onclick="abrirlink('https://mega.nz/#!AM41HCKB!e7vO3S65buBcvdTYDwVZ6kIg1MfPbGft47G2fVrvWYE')">
+                 </div>
+                  </div>
+        </div>
         
+         </div>
+        
+    </body>
+    
+</html>
+<style>
+    html{
+          animation-name: entrada;
+       animation-duration: 2s;
+    }
+  @media only screen 
+and (max-width : 500px) {
+   #tumama{
+     
+      
+    position: fixed;
+    top: 50%;
+    left: 50%;
+ 
+    margin-left: -150px;
+    }  
+    #iconito{
+        opacity: 0;
+    }
+    #multitube{
+          opacity: 0;
+    }
+     
+              
     }
     
-    #multitube{
+    #imagendescarga{
+        margin-left: 35%;
+        height: 100px;
+        width: 100px;
+    }
+    h1{
+        margin-top: 10%;
+    }
+    .textolarge{
+         margin-top: 25%;
+    }
+ 
+    .row{
+        margin-left: 4%;
+        margin-bottom: 7%;
+    }
+    #tumama{
+     display: inline-flex;
+      margin-bottom: 60px;
+        top: 25px;
+            
+      right: 12px;
+        
+        position: absolute;
+         vertical-align:middle;
+         
+    }
+     #multitube{
        
         padding-left: 3px;
         font-family: Roboto;
          display:inline-flex;
       text-align: center;
        color: white;
+         margin-top: 10px;
        vertical-align:middle;
         margin-bottom: 80px;
              margin-right: 40px;
          user-select: none;
     }
-    #titulo{
-      margin-top: 10%  ;
-        text-align: center;
-        font-family: Roboto;
-       
-    }
-    #tumama{
-        display: inline-flex;
-      margin-bottom: 60px;
-        top: 35px;
-            
-      right: 90px;
-        position: absolute;
-         vertical-align:middle;
-            
-        
+     #iconito{
+      height: 40px;
+        width: 40px;
+    margin-bottom: 70px;
+         margin-left: 10px;
+         margin-top: 15px;
     }
     li:hover{
         color:wheat;
@@ -193,65 +139,10 @@ filter: blur(5px);
           font-family: 'Roboto', sans-serif;
     }
  
-    header{
-         position:fixed;
-        background-color: #B71C1C;
-        width: 100%;
-        height: 70px;
-        border-radius: 2px;
-         opacity: 80;
-        top: 0px;
-        z-index: 9999999;
-        margin-bottom: 90px;
-        
-        
-    }
-    body{
-   
-       height: 100%;
-        width: 100%;
-        z-index: 9999;
-        
-    }
-    h1{
-     color:black;
-     font font-family:serif;
-    }
-     @keyframes imagencambio2 {
+    
+     @keyframes entrada {
  
-        30%{background-image: url("escaneando qr.png");}
-        60%{background-image: url("WhatsApp Image 2018-01-13 at 2.52.32 AM (1).jpeg");}
-        90%{background-image: url("WhatsApp Image 2018-01-13 at 2.52.32 AM (2).jpeg");}
-       
-        
-        
-    }
-    @keyframes imagencambio {
- 
-        25%{background-image: url("WhatsApp Image 2018-01-13 at 2.47.28 AM (1).jpeg");}
-        50%{background-image: url("WhatsApp Image 2018-01-13 at 2.47.28 AM (2).jpeg");}
-        75%{background-image: url("WhatsApp Image 2018-01-13 at 2.47.28 AM (3).jpeg");}
-        100%{background-image: url("WhatsApp Image 2018-01-13 at 2.47.28 AM.jpeg");}
-        
-        
-    }
-    @keyframes entrada {
- 
-    10%   { left:-900px; top:0px;}
-    20%  { left:-800px; top:0px;}
-    30%  { left:-700px; top:0px;}
-    40%  { left:-600px; top:0px;}
-    50% { left:-500px; top:0px;}
-    60%   { left:-400px; top:0px;}
-    70%  { left:-300px; top:0px;}
-    80%  { left:-200px; top:0px;}
-    90%  { left:-100px; top:0px;}
-    100% { left:0px; top:0px;}
-        
-        
-    }
-    @keyframes slidein {
-  from {
+   from {
    
    opacity:0;
            
@@ -261,16 +152,35 @@ filter: blur(5px);
  opacity:100;
    
   }
-}
+        
+        
+    }
+    #primerarow{
+        margin-top: 90px;
+    }
     
+     header{
+         position:fixed;
+        background-color: #B71C1C;
+        width: 100%;
+        height: 70px;
+        border-radius: 2px;
+         opacity: 80;
+        top: 0px;
+        z-index: 9999999;
+        margin-bottom: 90px;
+     
+        
+    }
 </style>
-
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
 <script>
-     function funciones(){
+    function funciones(){
          window.open("funciones.html","_self")
     }
+    
+
 function inicio(){
     window.open("index.html","_self")
 }
@@ -285,10 +195,23 @@ function ingles(){
     var perro=document.getElementById("titulo");
     perro.innerHTML="Select the languaje to continue";
 }
-
+function espanol(){
+    var perro=document.getElementById("titulo");
+    perro.innerHTML="Seleccione el lenguaje para continuar";
+}
+function ingles(){
+    var perro=document.getElementById("titulo");
+    perro.innerHTML="Select the languaje to continue";
+}
+function abrirlink(link){
+  window.open(link,"_self")
+}
     
 
 
 
 
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
