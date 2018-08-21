@@ -1,5 +1,5 @@
 # Multitube webpage
-This is the webpage of my c# and xamarin.android project
+This is the webpage of Multitube.android and multitube desktop app
 this was made with bootstrap and vanilla css for adjustments for the bootstrap responsive
 and vanilla js too for webpage logic.
 
